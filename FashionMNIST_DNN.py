@@ -6,8 +6,8 @@ import torch.optim as optim
 
 # Introduce MNIST dataset, and train, test set respectively
 # transform: preprocess the data(transform data to Tensor)
-trainset = datasets.MNIST('', train=True, download=True, transform=transforms.Compose([transforms.ToTensor()]))
-testset = datasets.MNIST('', train=False, download=True, transform=transforms.Compose([transforms.ToTensor()]))
+trainset = datasets.FashionMNIST("./data", download=True, transform=transforms.Compose([transforms.ToTensor()]))
+testset = datasets.FashionMNIST("./data", download=True, train=False, transform=transforms.Compose([transforms.ToTensor()]))
 
 # Slice the dataset into batch(batch_size)
 # shuffle: whether shuffling the data first
