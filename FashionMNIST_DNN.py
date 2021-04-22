@@ -51,7 +51,7 @@ net = Net() # initial network
 # optimizer.zero_grad(): clear the gradient from aggregating everytime after we update parameters
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 net.train() # set network to training mode
-epochs = 2
+epochs = 10
 for epoch in range(epochs):
     for data in trainloader:
         X, y = data # X: training data in batch; y: label
