@@ -75,7 +75,7 @@ error = nn.CrossEntropyLoss()
 learning_rate = 0.001
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-num_epochs = 6
+num_epochs = 5
 count = 0
 loss_list = []
 iteration_list = []
